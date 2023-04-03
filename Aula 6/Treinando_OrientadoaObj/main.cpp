@@ -22,6 +22,13 @@ int raziel(int i){
         return raziel(i);
     }
 }
+/*
+Este código é um programa C++ que recebe um número inteiro do usuário e retorna o resultado de uma função chamada "raziel". A função "raziel" recebe um inteiro "i" como entrada e realiza uma operação recursiva até que "i" seja menor ou igual a 1.
+
+A cada iteração, o valor de "i" é dobrado (multiplicado por 2). Quando "i" finalmente atinge o valor 1 ou inferior, o valor de "i" é retornado. A função "raziel" é então chamada no programa principal, passando o número inteiro inserido pelo usuário como argumento.
+
+Ou seja, só quando ele ir no limite do int que ele vai entregar um número menor que 1...
+*/
 
 int main(int argc, char *argv[])
 {
