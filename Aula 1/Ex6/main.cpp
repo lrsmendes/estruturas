@@ -1,3 +1,8 @@
+/*
+Escreva um programa que solicite ao usuário a idade de uma pessoa e informe se essa pessoa é criança (0 a 11 anos)... 
+...adolescente (12 a 17 anos), adulta (18 a 49 anos) ou idosa (a partir de 50 anos).  
+*/
+
 #include <cstdlib>
 #include <iostream>
 
@@ -6,22 +11,25 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     int idade;
-
-    cout << "Informe a idade da pessoa: ";
     cin >> idade;
-    cout << endl;
-
-    if (idade >= 0 && idade <= 11) {
-        cout << "Criança" << endl;
-    } else if (idade >= 12 && idade <= 17) {
-        cout << "Adolescente" << endl;
-    } else if (idade >= 18 && idade <= 49) {
-        cout << "Adulto" << endl;
-    } else {
-        cout << "Idoso" << endl;
+    
+    if (idade >= 0 && idade < 12){
+              cout << "CRIANÇA";
     }
     
-    cout << endl;
+    if (idade > 11 && idade < 18){
+              cout << "ADOLESCENTE";
+    }
+    
+    if (idade > 17 && idade < 50) {
+              cout << "ADULTA";
+    }
+    
+    if (idade > 49) {
+              cout << "IDOSA";
+    }
+    
+    puts("");
     
     system("PAUSE");
     return EXIT_SUCCESS;

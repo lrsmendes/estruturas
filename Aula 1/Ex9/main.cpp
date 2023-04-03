@@ -1,3 +1,7 @@
+/*
+Escreva um programa que solicite ao usuário quatro números e mostre na tela o maior, o menor e a média aritmética dos números digitados. 
+*/
+
 #include <cstdlib>
 #include <iostream>
 
@@ -5,42 +9,28 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    float n1, n2, n3, n4, maior, menor, media, cont;
-    cout << "Digite quatro números: " << endl;
+    double n1, n2, n3, n4;
+    double mai, men, med;
+    
     cin >> n1 >> n2 >> n3 >> n4;
 
-    // Encontrar o maior número
-    maior = n1;
-    if (n2 > maior) {
-        maior = n2;
-    }
-    if (n3 > maior) {
-        maior = n3;
-    }
-    if (n4 > maior) {
-        maior = n4;
-    }
+    mai = n1;
+    if (n2 > mai) mai = n2;
+    if (n3 > mai) mai = n3;
+    if (n4 > mai) mai = n4;
 
-    // Encontrar o menor número
-    menor = n1;
-    if (n2 < menor) {
-        menor = n2;
-    }
-    if (n3 < menor) {
-        menor = n3;
-    }
-    if (n4 < menor) {
-        menor = n4;
-    }
+    men = n1;
+    if (n2 < men) men = n2;
+    if (n3 < men) men = n3;
+    if (n4 < men) men = n4;
 
-    // Calcular a média aritmética
-    media = (n1 + n2 + n3 + n4) / 4;
-
-    // Mostrar o resultado na tela
-    cout << "O maior número é: " << maior << endl;
-    cout << "O menor número é: " << menor << endl;
-    cout << "A média aritmética é: " << media << endl;
+    med = n1 + n2 + n3 + n4;
     
+    puts("");
+
+    cout << "Maior número: " << mai << endl;
+    cout << "Menor número: " << men << endl;
+    cout << "Média: " << med / 4 << endl;
     
     system("PAUSE");
     return EXIT_SUCCESS;
